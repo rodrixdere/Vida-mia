@@ -8,6 +8,7 @@ export interface Chapter {
 
 export interface Crystal {
   slug: string
+  code?: string // barcode on the stone's label, read by the in-page scanner
   name: string
   tag: string // one word used by the filters: Calm, Love...
   intention: string
@@ -38,3 +39,9 @@ export interface Collection {
 export const collection: Collection = data
 
 export const findCrystal = (slug: string) => collection.crystals.find(c => c.slug === slug)
+
+// A scan is either the label's barcode or a QR holding the stone's link (#/crystal/slug)
+export const findByScan = (raw: string) => {
+  const slug = raw.match(/#\/crystal\/([\w-]+)/)?.[1]
+  return slug ? findCrystal(slug) : collection.crystals.find(c => c.code === raw.trim())
+}

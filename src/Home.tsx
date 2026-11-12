@@ -1,10 +1,11 @@
 import { useDeferredValue, useRef, useState } from 'react'
 import { AnimatePresence, motion, useReducedMotion } from 'motion/react'
-import { ArrowBendRightDownIcon, MagnifyingGlassIcon, SparkleIcon } from '@phosphor-icons/react'
+import { ArrowBendRightDownIcon, BarcodeIcon, MagnifyingGlassIcon, SparkleIcon } from '@phosphor-icons/react'
 import { collection, type Crystal } from './content'
 import { CrystalCard } from './CrystalCard'
 import { Shoutout } from './Shoutout'
 import { Draw } from './Draw'
+import { canScan, Scan } from './Scan'
 import { openCrystal } from './route'
 import { ease, Hand, springSnappy, springSoft, Titled, Wordmark } from './ui'
 
@@ -21,6 +22,7 @@ export function Home() {
   const [tag, setTag] = useState('All')
   const [query, setQuery] = useState('')
   const [drawing, setDrawing] = useState(false)
+  const [scanning, setScanning] = useState(false)
   // Order of the photos on the table; the last one touched stays on top, like picking it up and setting it back down
   const [stack, setStack] = useState([0, 1, 2])
   const lift = (i: number) => setStack(s => (s.at(-1) === i ? s : [...s.filter(x => x !== i), i]))
@@ -63,6 +65,18 @@ export function Home() {
               <SparkleIcon size={18} weight="light" />
               Draw a crystal
             </motion.button>
+            {canScan() ? (
+              <motion.button
+                type="button"
+                onClick={() => setScanning(true)}
+                whileTap={{ scale: 0.97 }}
+                transition={springSnappy}
+                className="inline-flex h-12 cursor-pointer items-center gap-3 border border-ink/70 px-6 text-xs tracking-[0.2em] uppercase transition-colors hover:border-gold hover:bg-gold"
+              >
+                <BarcodeIcon size={18} weight="light" />
+                Scan a crystal
+              </motion.button>
+            ) : null}
             <Hand className="-rotate-3">let one choose you</Hand>
           </motion.div>
         </div>
@@ -162,6 +176,7 @@ export function Home() {
       </footer>
 
       <AnimatePresence>{drawing ? <Draw onClose={() => setDrawing(false)} /> : null}</AnimatePresence>
+      <AnimatePresence>{scanning ? <Scan onClose={() => setScanning(false)} /> : null}</AnimatePresence>
     </div>
   )
 }

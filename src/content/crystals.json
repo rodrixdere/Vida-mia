@@ -12,6 +12,7 @@
   "crystals": [
     {
       "slug": "amethyst",
+      "code": "2000000000015",
       "name": "Amethyst",
       "tag": "Calm",
       "intention": "Calm and clear thinking",
@@ -37,6 +38,7 @@
     },
     {
       "slug": "rose-quartz",
+      "code": "2000000000022",
       "name": "Rose Quartz",
       "tag": "Love",
       "intention": "Love and kindness",
@@ -58,6 +60,7 @@
     },
     {
       "slug": "clear-quartz",
+      "code": "2000000000039",
       "name": "Clear Quartz",
       "tag": "Clarity",
       "intention": "Focus and intention",
@@ -83,6 +86,7 @@
     },
     {
       "slug": "citrine",
+      "code": "2000000000046",
       "name": "Citrine",
       "tag": "Abundance",
       "intention": "Warmth and abundance",
@@ -104,6 +108,7 @@
     },
     {
       "slug": "black-tourmaline",
+      "code": "2000000000053",
       "name": "Black Tourmaline",
       "tag": "Protection",
       "intention": "Grounding and protection",
@@ -125,6 +130,7 @@
     },
     {
       "slug": "selenite",
+      "code": "2000000000060",
       "name": "Selenite",
       "tag": "Cleansing",
       "intention": "Light and cleansing",
