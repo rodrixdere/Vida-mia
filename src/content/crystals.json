@@ -1,0 +1,152 @@
+{
+  "title": "The Crystal Collection",
+  "subtitle": "Vida Mía at The Retreat",
+  "intro": "Every stone in our collection has a story. Touch one and it will tell you.",
+  "shoutout": {
+    "name": "Santosha",
+    "title": "Before you go, visit Santosha",
+    "text": "Our boutique at The Retreat, with necklaces, rings, clothing and more to take a little of this place home with you.",
+    "note": "come say hi",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Gold_and_diamond_rings_with_passion_fruit_by_ASQ.jpg/960px-Gold_and_diamond_rings_with_passion_fruit_by_ASQ.jpg"
+  },
+  "crystals": [
+    {
+      "slug": "amethyst",
+      "name": "Amethyst",
+      "tag": "Calm",
+      "intention": "Calm and clear thinking",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Amethyst-geode_020_7765.jpg/960px-Amethyst-geode_020_7765.jpg",
+      "story": [
+        {
+          "title": "A name against excess",
+          "text": "The word comes from the ancient Greek amethystos, meaning \"not intoxicated\". Greeks carved drinking cups from it, believing the stone kept the drinker clear headed."
+        },
+        {
+          "title": "Where it comes from",
+          "text": "Amethyst is quartz coloured purple by traces of iron and natural radiation in the earth. Most of it grows inside volcanic geodes in Brazil and Uruguay.",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Amethyst-geode_both_020_7766.jpg/960px-Amethyst-geode_both_020_7766.jpg"
+        },
+        {
+          "title": "What it is known for",
+          "text": "It is traditionally kept close for calm, quiet sleep and a clear mind. Many people place it by the bed or in a meditation corner."
+        }
+      ],
+      "origin": "Brazil",
+      "care": "Keep it out of long direct sunlight, which slowly fades the purple.",
+      "price": ""
+    },
+    {
+      "slug": "rose-quartz",
+      "name": "Rose Quartz",
+      "tag": "Love",
+      "intention": "Love and kindness",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Rose_quartz_Spain.jpg/960px-Rose_quartz_Spain.jpg",
+      "story": [
+        {
+          "title": "The colour of a blush",
+          "text": "Its soft pink comes from microscopic mineral fibres trapped inside the quartz as it formed, which is why it glows rather than sparkles.",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Rose_Quartz_Macro_1.JPG/960px-Rose_Quartz_Macro_1.JPG"
+        },
+        {
+          "title": "What it is known for",
+          "text": "Often called the stone of the heart, rose quartz is given as a token of love, friendship and self care."
+        }
+      ],
+      "origin": "Brazil and Madagascar",
+      "care": "Like amethyst, its colour can fade in strong sun.",
+      "price": ""
+    },
+    {
+      "slug": "clear-quartz",
+      "name": "Clear Quartz",
+      "tag": "Clarity",
+      "intention": "Focus and intention",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Single_clear_quartz%2C_rock_crystal_1.jpg/960px-Single_clear_quartz%2C_rock_crystal_1.jpg",
+      "story": [
+        {
+          "title": "Ice that never melts",
+          "text": "The ancient Greeks called it krystallos, ice, believing it was water frozen so deeply it could never thaw. Our word crystal comes from it."
+        },
+        {
+          "title": "Close to home",
+          "text": "The Retreat sits atop a quartz mountain, so this is the stone beneath your feet during your stay.",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Clear_quartz%2C_rock_crystals_2.jpg/960px-Clear_quartz%2C_rock_crystals_2.jpg"
+        },
+        {
+          "title": "What it is known for",
+          "text": "Quartz keeps time inside watches thanks to its steady vibration. In crystal practice it is the stone of focus, used to set an intention."
+        }
+      ],
+      "origin": "",
+      "care": "Rinse with water and dry with a soft cloth.",
+      "price": ""
+    },
+    {
+      "slug": "citrine",
+      "name": "Citrine",
+      "tag": "Abundance",
+      "intention": "Warmth and abundance",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Raw_citrine_crystals_2.jpg/960px-Raw_citrine_crystals_2.jpg",
+      "story": [
+        {
+          "title": "Named after a lemon",
+          "text": "Citrine takes its name from the French citron. Natural citrine is rare, and much of what is sold is amethyst warmed until it turns gold.",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Raw_citrine_crystals_3.jpg/960px-Raw_citrine_crystals_3.jpg"
+        },
+        {
+          "title": "What it is known for",
+          "text": "Sunny and warm, it is associated with abundance and is often kept near a workspace or a cash box."
+        }
+      ],
+      "origin": "",
+      "care": "Store it away from strong sun to keep its colour.",
+      "price": ""
+    },
+    {
+      "slug": "black-tourmaline",
+      "name": "Black Tourmaline",
+      "tag": "Protection",
+      "intention": "Grounding and protection",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Schorl_-_Galil%C3%A9ia%2C_Minas_Gerais%2C_Brazil.jpg/960px-Schorl_-_Galil%C3%A9ia%2C_Minas_Gerais%2C_Brazil.jpg",
+      "story": [
+        {
+          "title": "The ash puller",
+          "text": "Dutch traders in the 1700s noticed that warm tourmaline attracts ash, and used it to clean their pipes. They called it aschentrekker.",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Dark_green%2C_almost_black_tourmaline_crystal_2.jpg/960px-Dark_green%2C_almost_black_tourmaline_crystal_2.jpg"
+        },
+        {
+          "title": "What it is known for",
+          "text": "Its deep black made it a stone of protection and grounding, often placed by the front door."
+        }
+      ],
+      "origin": "Minas Gerais, Brazil",
+      "care": "Wipe clean with a dry cloth.",
+      "price": ""
+    },
+    {
+      "slug": "selenite",
+      "name": "Selenite",
+      "tag": "Cleansing",
+      "intention": "Light and cleansing",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Gypsum_var._selenite_from_Andamooka_Ranges_-_Lake_Torrens_area%2C_South_Australia.jpg/960px-Gypsum_var._selenite_from_Andamooka_Ranges_-_Lake_Torrens_area%2C_South_Australia.jpg",
+      "story": [
+        {
+          "title": "A stone named for the moon",
+          "text": "Selenite is named after Selene, the Greek goddess of the moon, for its soft, pearly light."
+        },
+        {
+          "title": "Giants underground",
+          "text": "In the Cave of the Crystals in Naica, Mexico, selenite beams grow longer than a bus.",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Gypse_Caresse.jpg/960px-Gypse_Caresse.jpg"
+        },
+        {
+          "title": "What it is known for",
+          "text": "It is used to cleanse other crystals and to bring a calm, clear energy to a room."
+        }
+      ],
+      "origin": "",
+      "care": "Very soft and sensitive to water. Keep it dry and dust it gently.",
+      "price": ""
+    }
+  ]
+}

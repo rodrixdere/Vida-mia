@@ -1,0 +1,94 @@
+@import 'tailwindcss';
+
+/* Palette and type taken from theretreatcostarica.com */
+@theme {
+  --color-sand: #e6e3dd;
+  --color-paper: #f8f5f0;
+  --color-ink: #2f2d2a;
+  --color-muted: #6b6763;
+  --color-gold: #c2b280;
+  --color-gold-text: #7e6c40;
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Jost', system-ui, sans-serif;
+  --font-hand: 'Homemade Apple', cursive;
+}
+
+@layer base {
+  body {
+    @apply bg-paper text-ink font-sans font-light antialiased;
+    -webkit-tap-highlight-color: transparent;
+  }
+  /* Long-press on a photo should not open the save-image menu */
+  img {
+    -webkit-touch-callout: none;
+    user-select: none;
+  }
+  /* Soft paper grain over everything, so flat colour reads as printed paper */
+  body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: 50;
+    pointer-events: none;
+    opacity: 0.32;
+    mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.55 0 0 0 0 0.5 0 0 0 0 0.42 0 0 0 0.22 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+}
+
+/* A strip of paper tape holding a photo */
+.tape {
+  position: absolute;
+  top: -11px;
+  left: 50%;
+  width: 76px;
+  height: 22px;
+  translate: -50% 0;
+  rotate: -3deg;
+  background: rgb(226 214 182 / 0.72);
+  box-shadow: 0 1px 2px rgb(47 45 42 / 0.12);
+  clip-path: polygon(0 8%, 6% 0, 12% 10%, 20% 2%, 30% 9%, 40% 0, 52% 8%, 62% 1%, 74% 9%, 84% 2%, 94% 10%, 100% 4%, 100% 92%, 94% 100%, 84% 91%, 72% 99%, 60% 90%, 48% 100%, 36% 92%, 24% 100%, 12% 91%, 4% 99%, 0 90%);
+}
+
+/* Crystal cards: tilt toward the finger and a sheen that follows it (--x, --y, --rx, --ry) */
+.holo .print {
+  transform: perspective(900px) rotate(var(--tilt, 0deg)) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg));
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.6s;
+}
+@media (hover: hover) {
+  .holo:hover .print {
+    --tilt: 0deg;
+    box-shadow: 0 30px 50px -28px rgb(47 45 42 / 0.55);
+  }
+  .holo:hover .shine {
+    opacity: 1;
+  }
+}
+.holo:focus-visible .print {
+  --tilt: 0deg;
+  box-shadow: 0 30px 50px -28px rgb(47 45 42 / 0.55);
+}
+.holo:active .print {
+  transform: perspective(900px) scale(0.98);
+  transition-duration: 0.15s;
+}
+.holo .shine {
+  background:
+    radial-gradient(circle at var(--x, 50%) var(--y, 50%), rgb(255 255 255 / 0.55), transparent 45%),
+    linear-gradient(115deg, transparent 35%, rgb(194 178 128 / 0.35) 50%, transparent 65%);
+  mix-blend-mode: soft-light;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.holo:active .shine {
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .holo .print {
+    transform: rotate(var(--tilt, 0deg));
+  }
+  * {
+    transition: none !important;
+  }
+}
